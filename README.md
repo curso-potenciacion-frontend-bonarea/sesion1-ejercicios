@@ -1,17 +1,15 @@
-# TypeScript avanzado
+# Ejercicios
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" width="200">
+## Ejercicio 1
 
-## Template para los ejercicios del curso
+En la carpeta `src/mylib.js` tienes una librería de funciones en JavaScript. En el archivo `src/index.ts` se está importando la librería, pero TypeScript no reconoce los tipos de datos que se están utilizando porque no existen.
 
-Aquí tienes un template base para empezar los ejercicios. Ya tiene TS y ESLint instalados y configurados, recuerda que lo primero que tienes que hacer es `npm install`.
+Crea un archivo de definiciones de tipos para la librería. Asegúrate de que TypeScript reconoce los tipos de datos de la librería invocando a sus diferentes métodos en el archivo `src/index.ts`.
 
-Éstos son los scripts que puedes lanzar:
+## Ejercicio 2
 
-`npm run build`: compilará de TS a JS y lo guardará en la carpeta `dist`
+Crea una función llamada `plus` que reciba dos parámetros, que pueden ser o dos números o dos textos. Si recibe dos números, debe devolver la suma. Si recibe dos textos, debe devolverlos concatenados.
 
-`npm run build:dev`: hará lo mismo que el anterior, pero se quedará esperando cambios para volver a compilar
+## Ejercicio 3
 
-`npm start`: ejecutará el archivo `index.js` de la carpeta `dist`
-
-`npm run start:dev`: hará lo mismo que el anterior, pero se quedará esperando cambios para volver a ejecutar
+Crea una función genérica que tome dos valores de cualquier tipo y devuelva un array con esos valores intercambiados. Ejemplo: si le paso un 3 y un 'Hola' debería devolver ['Hola', 3].
