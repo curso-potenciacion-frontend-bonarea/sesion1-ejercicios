@@ -13,3 +13,28 @@ Crea una función llamada `plus` que reciba dos parámetros, que pueden ser o do
 ## Ejercicio 3
 
 Crea una función genérica que tome dos valores de cualquier tipo y devuelva un array con esos valores intercambiados. Ejemplo: si le paso un 3 y un 'Hola' debería devolver ['Hola', 3].
+
+## Ejercicio 4
+
+Dado este código:
+
+```ts
+interface User {
+  username: string;
+  password: string;
+}
+
+interface Admin extends User {
+  permissions: ("create" | "update" | "delete")[];
+  level: number;
+  departament: string;
+}
+```
+
+Crea una función `checkUserPermission(user, permission)` que devuelva `true` o `false` dependiendo de si el usuario recibido en el primer parámetro tiene el permiso recibido en el segundo parámetro.
+
+Por ejemplo:
+
+```ts
+checkUserPermission(luis, "create"); // true
+```
